@@ -4,11 +4,12 @@
   "description": "A project for exploring compiled web technology",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
-   // "type": "git",
-   // "url": "git+https://github.com/TorsteinM/NodeExploration.git"
+    "type": "git",
+    "url": "git+https://github.com/TorsteinM/NodeExploration.git"
   },
   "keywords": [
     "npm",
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/TorsteinM/NodeExploration#readme",
   "devDependencies": {
+    "css-loader": "^0.28.8",
+    "style-loader": "^0.19.1",
     "webpack": "^3.10.0"
   }
 }
