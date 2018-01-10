@@ -65,16 +65,38 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Main__ = __webpack_require__(1);
 
 
-var element = document.getElementById('root');
-myObj = {name: 'Torstein', hobby: 'coding'};
-
-document.getElementById('root').innerHTML = "My name is" + myObj.name + ", my hobby is " + myObj.coding;
 
 
 
+//Handlers
+var bgChange = () => {
+    var C = num => Math.floor(Math.random()*(num+1));
+    document.body.style.backgroundColor = 'rgb('+C(255)+','+C(255)+','+C(255)+')';
+}
+
+//Register events
+var buttons = document.querySelectorAll('button');
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].onclick = bgChange;
+}
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+class Main {
+    
+}
+
+/* unused harmony default export */ var _unused_webpack_default_export = (Main);
 
 /***/ })
 /******/ ]);
