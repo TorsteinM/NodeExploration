@@ -8,6 +8,10 @@ module.exports = {
     app: './src/index.js',
     print: './src/print.js'
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: path.resolve(__dirname,DIST_FOLDER)
+    },
   plugins: [
     new CleanWebpackPlugin([DIST_FOLDER]),
     new HtmlWebpackPlugin({
@@ -16,6 +20,7 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, DIST_FOLDER)
+    path: path.resolve(__dirname, DIST_FOLDER),
+    publicPath: '/'
   }
 };
