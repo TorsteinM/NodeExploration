@@ -1,4 +1,19 @@
 
-import { buttons } from './Main';
+import printMe from './print.js'
 
-buttons();
+function component(){
+  var element = document.createElement('div');
+  var btn = document.createElement('button');
+
+  element.innerHTML = 'Somehing, Something';
+
+  btn.innerHTML = 'Click me and check the console.';
+
+  btn.onclick = printMe;
+
+  element.appendChild(btn);
+
+  return element;
+}
+
+document.body.appendChild(component());

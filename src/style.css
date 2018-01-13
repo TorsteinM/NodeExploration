@@ -1,21 +1,6 @@
 
- @font-face {
-  font-family: 'MyFont';
-  src:  url('./fonts/OpenSans600.woff') format('OpenSans600'),
-    url('./fonts/OpenSans600italic.woff') format('OpenSans600');
-  font-weight: 600;
-  font-style: normal;
-}
-
 body {
   margin: 0;
   padding: 0;
   border: 0;
-}
-.hello {
-    font-size: 32px;
-    color: red;
-    background: url('./icon.png');
-    text-justify: distribute-all-lines;
-    font-family: 'OpenSans';
 }
